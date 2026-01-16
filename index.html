@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shailesh N. Patil - Full Stack Developer</title>
+    <title>Shailesh N. Patil - Machine Learning Student</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,15 +35,18 @@
             font-family: 'Inter', sans-serif;
             transition: background-color 0.3s, color 0.3s;
         }
+
         .profile-img {
             width: 250px;
             height: 250px;
             object-fit: cover;
         }
+
         .nav-link {
             position: relative;
             transition: color 0.3s;
         }
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -54,20 +58,29 @@
             background-color: #3b82f6;
             transition: width 0.3s;
         }
-        .nav-link:hover::after, .nav-link.active::after {
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
             width: 100%;
         }
-        .skill-card, .project-card, .card {
-             transition: transform 0.3s, box-shadow 0.3s;
+
+        .skill-card,
+        .project-card,
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .skill-card:hover, .project-card:hover {
+
+        .skill-card:hover,
+        .project-card:hover {
             transform: translateY(-5px);
         }
+
         .project-card:hover {
             transform: scale(1.02) translateY(-5px);
         }
     </style>
 </head>
+
 <body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-300 antialiased">
 
     <!-- Header & Navigation -->
@@ -76,14 +89,20 @@
             <a href="#" class="text-2xl font-bold text-blue-600 dark:text-blue-500">Shailesh N. Patil</a>
             <div class="flex items-center space-x-4">
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#about" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">About</a>
-                    <a href="#skills" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Skills</a>
-                    <a href="#experience" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Experience</a>
-                    <a href="#projects" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Projects</a>
-                    <a href="#contact" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Contact</a>
+                    <a href="#about"
+                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">About</a>
+                    <a href="#skills"
+                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Skills</a>
+                    <a href="#experience"
+                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Experience</a>
+                    <a href="#projects"
+                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Projects</a>
+                    <a href="#contact"
+                        class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium">Contact</a>
                 </div>
                 <!-- Theme Toggle Button -->
-                <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
                     <i id="theme-toggle-dark-icon" class="fas fa-moon hidden"></i>
                     <i id="theme-toggle-light-icon" class="fas fa-sun hidden"></i>
                 </button>
@@ -94,11 +113,16 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#about" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">About</a>
-            <a href="#skills" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Skills</a>
-            <a href="#experience" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Experience</a>
-            <a href="#projects" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Projects</a>
-            <a href="#contact" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
+            <a href="#about"
+                class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">About</a>
+            <a href="#skills"
+                class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Skills</a>
+            <a href="#experience"
+                class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Experience</a>
+            <a href="#projects"
+                class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Projects</a>
+            <a href="#contact"
+                class="block py-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">Contact</a>
         </div>
     </header>
 
@@ -106,22 +130,36 @@
 
         <!-- Hero Section -->
         <section id="hero" class="text-center py-16">
-            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl p-8 md:p-16 shadow-2xl text-white relative overflow-hidden">
+            <div
+                class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl p-8 md:p-16 shadow-2xl text-white relative overflow-hidden">
                 <div class="absolute -top-10 -left-10 w-40 h-40 bg-white/10 rounded-full"></div>
                 <div class="absolute -bottom-12 -right-12 w-52 h-52 bg-white/10 rounded-full"></div>
-                
+
                 <h1 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-down">Shailesh N. Patil</h1>
-                <p class="text-xl md:text-2xl mb-8 font-light" data-aos="fade-up" data-aos-delay="100">Aspiring Full Stack Developer</p>
+                <p class="text-xl md:text-2xl mb-8 font-light" data-aos="fade-up" data-aos-delay="100">Machine
+                    Learning Student</p>
                 <p class="max-w-3xl mx-auto text-lg text-blue-100 mb-10" data-aos="fade-up" data-aos-delay="200">
-                    Skilled in building responsive web apps, RESTful APIs, and real-time features. Passionate about creating seamless and scalable software solutions.
+                    Machine Learning focused Computer Engineering student skilled in Python, SQL, and ML model
+                    development.
+                    Experienced in data preprocessing, NLP pipelines, recommender systems, and chatbot development with
+                    a
+                    focus on preparing for ML/MLOps Engineer roles.
                 </p>
                 <div class="flex justify-center items-center space-x-6" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://www.linkedin.com/in/shaileshpatil97" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/shaileshpatil97" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i class="fab fa-github"></i></a>
-                    <a href="mailto:shaileshpatil9763@gmail.com" class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/shaileshpatil97" target="_blank" rel="noopener noreferrer"
+                        class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shaileshpatil97" target="_blank" rel="noopener noreferrer"
+                        class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i
+                            class="fab fa-github"></i></a>
+                    <a href="mailto:shaileshpatil9763@gmail.com"
+                        class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i
+                            class="fas fa-envelope"></i></a>
                 </div>
                 <div class="mt-10" data-aos="fade-up" data-aos-delay="400">
-                    <a href="https://drive.google.com/file/d/1AGuY-GVuYc7mIbQD0VtkT5KZ959optHQ/view?usp=sharing" id="resume-link" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300 text-lg shadow-lg inline-block">
+                    <a href="https://drive.google.com/file/d/186MT9BRORstEMUgtihG8obko3h-yRgj2/view?usp=drive_link"
+                        id="resume-link" target="_blank" rel="noopener noreferrer"
+                        class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300 text-lg shadow-lg inline-block">
                         <i class="fas fa-file-alt mr-2"></i> View Resume
                     </a>
                 </div>
@@ -133,12 +171,19 @@
             <h2 class="text-4xl font-bold text-center mb-12 dark:text-white" data-aos="fade-up">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/3 flex-shrink-0" data-aos="fade-right">
-                    <img src="https://i.postimg.cc/hGTpTBT0/profilephoto.jpg" alt="Shailesh Patil" class="profile-img rounded-full shadow-2xl mx-auto border-8 border-white dark:border-slate-700">
+                    <img src="https://i.postimg.cc/bw0DW0b7/Profile-Photo.jpg" alt="Shailesh Patil"
+                        class="profile-img rounded-full shadow-2xl mx-auto border-8 border-white dark:border-slate-700">
                 </div>
                 <div class="md:w-2/3 text-lg space-y-4" data-aos="fade-left">
-                    <p>I'm a final-year Computer Engineering student with a strong foundation in both frontend and backend development. My journey in tech is driven by a passion for building things that are not only functional but also elegant and user-friendly.</p>
-                    <p>I thrive on challenges and am constantly exploring new technologies to broaden my skillset. From designing robust databases to crafting interactive user interfaces and implementing real-time features with WebSockets, I enjoy every aspect of the development lifecycle.</p>
-                    <p>My goal is to contribute to innovative projects that solve real-world problems and to grow into a proficient Full Stack Developer who can deliver end-to-end solutions.</p>
+                    <p>I'm a final-year Computer Engineering student with a strong foundation in Machine Learning, Data
+                        Science, and Artificial Intelligence. I am passionate about transforming raw data into
+                        meaningful insights and building intelligent systems that can solve real-world problems.</p>
+                    <p>I enjoy working with algorithms, models, and data-driven approaches to create smart and efficient
+                        solutions. From data preprocessing and feature engineering to model training and evaluation, I
+                        love every stage of the machine learning lifecycle.</p>
+                    <p>My goal is to contribute to innovative AI and ML-based projects, continuously enhance my
+                        analytical and technical skills, and grow into a proficient Machine Learning Engineer capable of
+                        developing impactful and intelligent applications.</p>
                 </div>
             </div>
         </section>
@@ -146,36 +191,30 @@
         <!-- Skills Section -->
         <section id="skills" class="py-12 my-12 bg-white dark:bg-slate-800 rounded-3xl shadow-lg">
             <h2 class="text-4xl font-bold text-center mb-12 dark:text-white" data-aos="fade-up">Technical Skills</h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Frontend -->
+
+                <!-- Web Development -->
                 <div class="skill-card bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-md" data-aos="zoom-in-up">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-code text-3xl text-blue-500 mr-4"></i>
-                        <h3 class="text-2xl font-semibold dark:text-white">Frontend</h3>
+                        <h3 class="text-2xl font-semibold dark:text-white">Web Development</h3>
                     </div>
                     <ul class="space-y-2 text-gray-600 dark:text-gray-400">
                         <li><i class="fab fa-html5 mr-2 text-orange-500"></i>HTML</li>
                         <li><i class="fab fa-css3-alt mr-2 text-blue-500"></i>CSS</li>
                         <li><i class="fab fa-js-square mr-2 text-yellow-400"></i>JavaScript</li>
                         <li><i class="fab fa-bootstrap mr-2 text-purple-500"></i>Bootstrap</li>
-                    </ul>
-                </div>
-                <!-- Backend -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-md" data-aos="zoom-in-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-server text-3xl text-green-500 mr-4"></i>
-                        <h3 class="text-2xl font-semibold dark:text-white">Backend</h3>
-                    </div>
-                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
                         <li><i class="fab fa-python mr-2 text-blue-400"></i>Python</li>
                         <li><i class="fas fa-flask mr-2 text-gray-700 dark:text-gray-300"></i>Flask</li>
-                        <li><i class="fas fa-bold mr-2 text-green-700"></i>Django</li>
+                        <li><i class="fas fa-server mr-2 text-green-600"></i>Django</li>
                         <li><i class="fas fa-project-diagram mr-2 text-gray-500"></i>REST API</li>
                         <li><i class="fas fa-plug mr-2 text-red-500"></i>WebSocket</li>
                     </ul>
                 </div>
+
                 <!-- Database -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-md" data-aos="zoom-in-up" data-aos-delay="200">
+                <div class="skill-card bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-md" data-aos="zoom-in-up">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-database text-3xl text-red-500 mr-4"></i>
                         <h3 class="text-2xl font-semibold dark:text-white">Database</h3>
@@ -183,35 +222,79 @@
                     <ul class="space-y-2 text-gray-600 dark:text-gray-400">
                         <li><i class="fas fa-database mr-2 text-blue-600"></i>MySQL</li>
                         <li><i class="fas fa-database mr-2 text-blue-800"></i>PostgreSQL</li>
-                        <li><i class="fas fa-leaf mr-2 text-green-600"></i>MongoDB</li>
+                        <li><i class="fas fa-server mr-2 text-purple-600"></i>SQLite</li>
                     </ul>
                 </div>
-                <!-- Tools & Others -->
-                <div class="skill-card bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-md" data-aos="zoom-in-up" data-aos-delay="300">
+
+                <!-- ML / Data Science -->
+                <div class="skill-card bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-md" data-aos="zoom-in-up">
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-tools text-3xl text-yellow-500 mr-4"></i>
-                        <h3 class="text-2xl font-semibold dark:text-white">Tools & More</h3>
+                        <i class="fas fa-brain text-3xl text-green-500 mr-4"></i>
+                        <h3 class="text-2xl font-semibold dark:text-white">ML / Data Science</h3>
                     </div>
                     <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-                        <li><i class="fas fa-brain mr-2 text-pink-500"></i>AI / LLM Integration</li>
-                        <li><i class="fas fa-terminal mr-2 text-cyan-400"></i>Prompt Engineering</li>
-                        <li><i class="fab fa-git-alt mr-2 text-orange-600"></i>Git & GitHub</li>
-                        <li><i class="fab fa-github mr-2 text-black dark:text-white"></i>GitHub Actions (CI/CD)</li>
-                        <li><i class="fas fa-server mr-2 text-red-400"></i>Redis</li>
-                        <li><i class="fas fa-key mr-2 text-yellow-600"></i>JWT Authentication</li>
-                        <li><i class="fas fa-cloud-upload-alt mr-2 text-blue-400"></i>Deployment</li>
+                        <li><i class="fas fa-calculator mr-2 text-blue-600"></i>NumPy</li>
+                        <li><i class="fas fa-table mr-2 text-blue-800"></i>Pandas</li>
+                        <li><i class="fas fa-chart-line mr-2 text-blue-600"></i>Matplotlib</li>
+                        <li><i class="fas fa-chart-area mr-2 text-blue-800"></i>Seaborn</li>
+                        <li><i class="fas fa-cogs mr-2 text-green-600"></i>Scikit-learn</li>
+                        <li><i class="fas fa-network-wired mr-2 text-orange-600"></i>TensorFlow</li>
+                        <li><i class="fas fa-language mr-2 text-purple-600"></i>NLP</li>
+                        <li><i class="fas fa-robot mr-2 text-pink-600"></i>LLMs</li>
+                        <li><i class="fas fa-search mr-2 text-indigo-600"></i>RAG</li>
+                        <li><i class="fas fa-database mr-2 text-yellow-600"></i>EDA</li>
+                        <li><i class="fas fa-tools mr-2 text-gray-600"></i>Feature Engineering</li>
                     </ul>
                 </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-card bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-md" data-aos="zoom-in-up">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tools text-3xl text-yellow-500 mr-4"></i>
+                        <h3 class="text-2xl font-semibold dark:text-white">Tools & Platforms</h3>
+                    </div>
+                    <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                        <li><i class="fab fa-git-alt mr-2 text-orange-600"></i>Git & GitHub</li>
+                        <li><i class="fas fa-file-excel mr-2 text-green-600"></i>Excel</li>
+                        <li><i class="fas fa-chart-bar mr-2 text-yellow-600"></i>Power BI</li>
+                        <li><i class="fas fa-book-open mr-2 text-blue-600"></i>Jupyter Notebook</li>
+                        <li><i class="fab fa-github mr-2 text-black dark:text-white"></i>GitHub Actions (CI/CD)</li>
+                        <li><i class="fas fa-cloud mr-2 text-blue-500"></i>OpenAI API</li>
+                        <li><i class="fas fa-cloud-upload-alt mr-2 text-red-500"></i>Gemini API</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
+
 
         <!-- Experience Section -->
         <section id="experience" class="py-12">
             <h2 class="text-4xl font-bold text-center mb-12 dark:text-white" data-aos="fade-up">Experience</h2>
             <div class="relative border-l-2 border-blue-500 dark:border-blue-700 pl-10 space-y-16" data-aos="fade-left">
-                 <!-- Timeline Pointer -->
-                <div class="absolute -left-[11px] top-2 w-5 h-5 bg-blue-500 rounded-full border-4 border-white dark:border-slate-800"></div>
-                
+                <!-- Timeline Pointer -->
+                <div
+                    class="absolute -left-[11px] top-2 w-5 h-5 bg-blue-500 rounded-full border-4 border-white dark:border-slate-800">
+                </div>
+                <div class="relative">
+                    <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Data Analytics Intern</h3>
+                    <p class="font-medium text-slate-700 dark:text-slate-400">Inditronics Company</p>
+                    <p class="text-sm text-gray-500 dark:text-gray-500 mb-2">Jan 2026 - Present</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Working on data cleaning, preprocessing, and exploratory data analysis using Python and SQL.
+                        </li>
+                        <li>Developing insightful dashboards and visualizations using Power BI and Excel.</li>
+                        <li>Analyzing business data to identify trends, patterns, and actionable insights.</li>
+                        <li>Building reports and presentations to support data-driven decision making.</li>
+                        <li>Automating repetitive data processing tasks to improve efficiency.</li>
+                    </ul>
+                </div>
+
+                <!-- Timeline Pointer -->
+                <div
+                    class="absolute -left-[11px] top-2 w-5 h-5 bg-blue-500 rounded-full border-4 border-white dark:border-slate-800">
+                </div>
+
                 <div class="relative">
                     <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Python Developer Intern</h3>
                     <p class="font-medium text-slate-700 dark:text-slate-400">YBI Foundation</p>
@@ -223,53 +306,153 @@
                     </ul>
                 </div>
 
-                 <!-- Timeline Pointer -->
-                <div class="absolute -left-[11px] top-[180px] w-5 h-5 bg-blue-500 rounded-full border-4 border-white dark:border-slate-800"></div>
+                <!-- Timeline Pointer -->
+                <div
+                    class="absolute -left-[11px] top-[180px] w-5 h-5 bg-blue-500 rounded-full border-4 border-white dark:border-slate-800">
+                </div>
                 <div class="relative">
                     <h3 class="text-2xl font-semibold text-blue-600 dark:text-blue-400">Web Dev Intern</h3>
                     <p class="font-medium text-slate-700 dark:text-slate-400">Oasis Infobyte</p>
                     <p class="text-sm text-gray-500 dark:text-gray-500 mb-2">Jun 2024 - Jul 2024</p>
                     <ul class="list-disc list-inside space-y-1">
-                        <li>Developed interactive and responsive frontend web pages using HTML, CSS, and JavaScript.</li>
-                        <li>Successfully integrated user forms with backend APIs and databases for data persistence.</li>
+                        <li>Developed interactive and responsive frontend web pages using HTML, CSS, and JavaScript.
+                        </li>
+                        <li>Successfully integrated user forms with backend APIs and databases for data persistence.
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
-        
+
         <!-- Projects Section -->
         <section id="projects" class="py-12 my-12 bg-white dark:bg-slate-800 rounded-3xl shadow-lg">
             <h2 class="text-4xl font-bold text-center mb-12 dark:text-white" data-aos="fade-up">Projects</h2>
             <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="project-card bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col" data-aos="fade-up">
+                <!-- Project 2 -->
+                <div class="project-card bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col"
+                    data-aos="fade-up">
                     <div class="p-6 flex-grow">
-                        <h3 class="text-2xl font-bold mb-2 dark:text-white">InnoChat Admission Bot</h3>
-                        <p class="mb-4">A smart conversational chatbot to guide students through the admission process, with voice support.</p>
+                        <h3 class="text-2xl font-bold mb-2 dark:text-white">ATS Resume Analyzer</h3>
+                        <p class="mb-4">A smart system that analyzes resumes against job descriptions and provides ATS
+                            score, keyword matching, and improvement suggestions.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Rasa NLU</span>
-                            <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Gemini API</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Flask</span>
+                            <span
+                                class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">NLP</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Streamlit</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">LLMs</span>
                         </div>
                     </div>
                     <div class="p-6 pt-0">
-                        <a href="https://github.com/shaileshpatil97/InnoChat" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="https://github.com/shaileshpatil97/Smart-ATS-Career-Co-Pilot" target="_blank"
+                            rel="noopener noreferrer"
+                            class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">View on GitHub <i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col"
+                    data-aos="fade-up">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Movie Recommendation System</h3>
+                        <p class="mb-4">A machine learning-based recommendation engine that suggests movies to users
+                            based on content similarity and user preferences.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Scikit-learn</span>
+                            <span
+                                class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded">Pandas</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">ML</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://github.com/shaileshpatil97/movie-recommendation-system" target="_blank"
+                            rel="noopener noreferrer"
+                            class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">View on GitHub <i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col"
+                    data-aos="fade-up">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Email Spam Classifier</h3>
+                        <p class="mb-4">A classification model that detects whether an email is spam or ham using
+                            machine learning and NLP techniques.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">NLP</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Scikit-learn</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">ML
+                                Model</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://github.com/shaileshpatil97/Email-Spam-Classifier" target="_blank"
+                            rel="noopener noreferrer"
+                            class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">View on GitHub <i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col"
+                    data-aos="fade-up">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold mb-2 dark:text-white">InnoChat Admission Bot</h3>
+                        <p class="mb-4">A smart conversational chatbot to guide students through the admission process,
+                            with voice support.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Rasa
+                                NLU</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">Gemini
+                                API</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Flask</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://github.com/shaileshpatil97/InnoChat" target="_blank" rel="noopener noreferrer"
+                            class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">View on GitHub <i
+                                class="fas fa-arrow-right ml-1"></i></a>
                     </div>
                 </div>
                 <!-- Project 2 -->
-                <div class="project-card bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg flex flex-col"
+                    data-aos="fade-up" data-aos-delay="100">
                     <div class="p-6 flex-grow">
                         <h3 class="text-2xl font-bold mb-2 dark:text-white">E-Commerce Backend</h3>
-                        <p class="mb-4">A complete backend system for an e-commerce platform with real-time order updates and JWT auth.</p>
+                        <p class="mb-4">A complete backend system for an e-commerce platform with real-time order
+                            updates and JWT auth.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Flask</span>
-                            <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">MongoDB</span>
-                            <span class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">WebSocket</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Redis</span>
+                            <span
+                                class="bg-yellow-100 text-yellow-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">Flask</span>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">MongoDB</span>
+                            <span
+                                class="bg-red-100 text-red-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">WebSocket</span>
+                            <span
+                                class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Redis</span>
                         </div>
                     </div>
-                     <div class="p-6 pt-0">
-                        <a href="https://github.com/shaileshpatil97/E-Commerce-API" target="_blank" rel="noopener noreferrer" class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">View on GitHub <i class="fas fa-arrow-right ml-1"></i></a>
+                    <div class="p-6 pt-0">
+                        <a href="https://github.com/shaileshpatil97/E-Commerce-API" target="_blank"
+                            rel="noopener noreferrer"
+                            class="font-semibold text-blue-600 dark:text-blue-400 hover:underline">View on GitHub <i
+                                class="fas fa-arrow-right ml-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -277,7 +460,8 @@
 
         <!-- Education & Certifications -->
         <section id="education" class="py-12">
-            <h2 class="text-4xl font-bold text-center mb-12 dark:text-white" data-aos="fade-up">Education & Certifications</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 dark:text-white" data-aos="fade-up">Education &
+                Certifications</h2>
             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
                 <div class="card bg-white dark:bg-slate-800 p-8 rounded-xl shadow-md" data-aos="fade-right">
                     <div class="flex items-center mb-4">
@@ -306,18 +490,25 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-12">
-             <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl p-8 md:p-16 shadow-2xl text-white text-center" data-aos="zoom-in">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl p-8 md:p-16 shadow-2xl text-white text-center"
+                data-aos="zoom-in">
                 <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
                 <p class="max-w-2xl mx-auto text-lg text-blue-100 mb-8">
-                    I'm currently looking for new opportunities and would love to hear from you. Whether you have a question or just want to say hi, feel free to reach out!
+                    I'm currently looking for new opportunities and would love to hear from you. Whether you have a
+                    question or just want to say hi!
                 </p>
-                <a href="mailto:shaileshpatil9763@gmail.com" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300 text-lg shadow-lg">
+                <a href="mailto:shaileshpatil9763@gmail.com"
+                    class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300 text-lg shadow-lg">
                     Say Hello
                 </a>
-                
+
                 <div class="mt-16 flex justify-center space-x-6">
-                    <a href="https://www.linkedin.com/in/shaileshpatil97" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/shaileshpatil97" target="_blank" rel="noopener noreferrer" class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shaileshpatil97" target="_blank" rel="noopener noreferrer"
+                        class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shaileshpatil97" target="_blank" rel="noopener noreferrer"
+                        class="text-white hover:text-blue-200 transition duration-300 text-3xl"><i
+                            class="fab fa-github"></i></a>
                 </div>
             </div>
         </section>
@@ -327,7 +518,7 @@
     <!-- Footer -->
     <footer class="bg-slate-800 dark:bg-black py-6">
         <div class="container mx-auto px-6 text-center text-slate-400">
-            <p>&copy; 2024 Shailesh N. Patil. All Rights Reserved.</p>
+            <p>&copy; 2026 Shailesh N. Patil. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -394,7 +585,7 @@
         } else {
             themeToggleDarkIcon.classList.remove('hidden');
         }
-        themeToggleBtn.addEventListener('click', function() {
+        themeToggleBtn.addEventListener('click', function () {
             themeToggleDarkIcon.classList.toggle('hidden');
             themeToggleLightIcon.classList.toggle('hidden');
             if (localStorage.getItem('color-theme')) {
@@ -419,4 +610,5 @@
     </script>
 
 </body>
+
 </html>
